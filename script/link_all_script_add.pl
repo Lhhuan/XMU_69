@@ -4,7 +4,7 @@ use strict;
 use utf8;
 use File::Basename;
 
-my $dir_out   = "/public/home/huanhuan/Script_backup/script/";
+my $dir_out   = "/public/home/huanhuan/Script_backup/Huan_link_all_script/";
 mkdir $dir_out unless -d $dir_out;
 
 chdir "/public/home/huanhuan/";
@@ -23,7 +23,7 @@ foreach my $f1(@files){
     {
         chomp;
         my $script = $_;
-        unless($script=~/^\.\/anaconda|^\.\/Script_backup|^\.\/php|^\.\/tools|^\.\/\.local|^\.\/R|^\.\/\.conda/){  
+        unless($script=~/^\.\/anaconda|^\.\/Script_backup|^\.\/php|^\.\/tools|^\.\/\.local|^\.\/R|^\.\/\.conda|\.\/\.cpan|\.\/\.jupyter/){  
             my $file = basename($script);
             my $dir = dirname($script);
             $dir=~s/^\.\///;
