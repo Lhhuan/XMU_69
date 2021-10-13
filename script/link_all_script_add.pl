@@ -4,7 +4,7 @@ use strict;
 use utf8;
 use File::Basename;
 
-my $dir_out   = "/public/home/huanhuan/Script_backup/script/Huan_link_all_script";
+my $dir_out   = "/public/home/huanhuan/Script_backup/script/";
 mkdir $dir_out unless -d $dir_out;
 
 chdir "/public/home/huanhuan/";
